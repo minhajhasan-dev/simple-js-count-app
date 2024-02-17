@@ -15,3 +15,8 @@ decrementBtn.addEventListener("click", function () {
     alert("Count can't be less than 0.");
   }
 });
+
+const resetBtn = document.getElementById("reset");
+resetBtn.addEventListener("click", function () {
+  countElement.innerText = 0;
+});
