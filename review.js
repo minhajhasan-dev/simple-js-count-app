@@ -5,11 +5,16 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   const inputValue = inputField.value;
   const h2 = document.createElement("h2");
   h2.innerText = serialCount + ". " + inputValue;
-  h2.style.color = "red";
+  h2.style.color = "green";
   h2.style.fontSize = "1.8rem";
   h2.style.marginTop = "10px";
-  reviewContainer.appendChild(h2);
-  serialCount++;
+  if (inputValue === "") {
+    alert("please write something...");
+  } else {
+    reviewContainer.appendChild(h2);
+    serialCount++;
+  }
+
   //empty the input field
   document.querySelector("textarea").value = "";
 });
