@@ -20,3 +20,7 @@ const resetBtn = document.getElementById("reset");
 resetBtn.addEventListener("click", function () {
   countElement.innerText = 0;
 });
+
+document.getElementById("goto-review").onclick = function () {
+  location.href = "user-review.html";
+};
