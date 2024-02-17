@@ -22,5 +22,5 @@ resetBtn.addEventListener("click", function () {
 });
 
 document.getElementById("goto-review").onclick = function () {
-  location.href = "user-review.html";
+  location.href = "./user-review.html";
 };

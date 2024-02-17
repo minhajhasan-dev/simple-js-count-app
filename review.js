@@ -13,3 +13,6 @@ document.getElementById("submit-btn").addEventListener("click", function () {
   //empty the input field
   document.querySelector("textarea").value = "";
 });
+document.getElementById("main-page").onclick = function () {
+  location.href = "./index.html";
+};
